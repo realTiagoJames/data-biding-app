@@ -5,5 +5,5 @@
 Para rodar esse projeto em sua máquina. por favor digite:
 
 ```
-npm start / ng serve
+ng serve / npm start 
 ```
