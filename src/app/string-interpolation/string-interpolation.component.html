@@ -1,8 +1,20 @@
-<p>{{ firstname }}</p>
-<p>{{ age }}</p>
-<p>{{ person.firstname }}</p>
-<p>{{ person.lastname }}</p>
-<p>{{ age+age }}</p>
-<p>{{ 100+100 }}</p>
-
-
+<mat-card class="MyCard">
+  <mat-card-header>
+    <mat-card-title>Person data</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Firstname: {{ person.firstname }}</p>
+    <p>Lasstname: {{ person.lastname }}</p>
+    <p>Age: {{ person.age }}</p>
+    <p>Address: {{ person.address }}</p>
+    <form>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name" value="{{ person.firstname }}">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-stroked-button color="primary">LIKE</button>
+    <button mat-stroked-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
