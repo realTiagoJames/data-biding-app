@@ -1,0 +1,28 @@
+<p class="title">TESTANDO EVENT BINDING</p>
+
+<p class="espaço-padrao">Exemplo 1 - Ao clickar, aparece um alerta.</p>
+<section class="espaço-padrao">
+  <p>{{name}}</p>
+  <input type="botton" value="Save" (click)="clickSave()">
+</section>
+
+<p class="espaço-padrao">Exemplo 2 - Ao clickar altera o nome e bolta pro original depois de segundos.</p>
+<section class="espaço-padrao">
+  <p>{{name2}}</p>
+  <input type="botton" value="Save" (click)="clickSave2()">
+</section>
+
+<p class="espaço-padrao">Exemplo 3 - Ao passar o mouse por cima, altera a o texto.</p>
+<p class="espaço-padrao">Ao clickar, aparece um alerta.</p>
+<section class="espaço-padrao">
+  <p>{{name3}}</p>
+  <input type="botton" value="Save" (click)="clickSave3()" (mouseover)="over()">
+</section>
+
+<p class="espaço-padrao">Exemplo 4 - Ao digitar o nome e clickar fora altera o texto.</p>
+<p class="espaço-padrao">Ao clickar, aparece um alerta.</p>
+<section class="espaço-padrao">
+  <p>{{name4}}</p>
+  <input type="botton" (change)="txtChange()">
+  <input type="botton" value="Save" (click)="clickSave4()">
+</section>

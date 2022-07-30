@@ -10,13 +10,18 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { PropertyBidingComponent } from './property-biding/property-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { EventBiding2Component } from './event-biding2/event-biding2.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     PropertyBidingComponent,
-    EventBidingComponent
+    EventBidingComponent,
+    EventBiding2Component
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,9 @@ import { EventBidingComponent } from './event-biding/event-biding.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
