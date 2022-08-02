@@ -1,3 +1,4 @@
+import { EventBidingComponent } from './event-biding/event-biding.component';
 import { MainBarComponent } from './main-bar/main-bar.component';
 import { HomeComponent } from './home/home.component';
 import { PropertyBidingComponent } from './property-biding/property-biding.component';
@@ -12,10 +13,10 @@ const routes: Routes = [
     path: '', component: MainBarComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'event-bind', component: EventBiding2Component },
+      { path: 'event-bind', component: EventBidingComponent },
+      { path: 'event-bind2', component: EventBiding2Component },
       { path: 'string-interpolation', component: StringInterpolationComponent },
       { path: 'property-bind', component: PropertyBidingComponent },
-
     ],
   },
 
