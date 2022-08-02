@@ -1,3 +1,4 @@
+import { DiretivasComponent } from './diretivas/diretivas.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'property-bind', component: PropertyBidingComponent },
       { path: 'two-way-data-binding', component: TwoWayBidingComponent },
       { path: 'pipes', component: PipesComponent },
+      { path: 'diretivas', component: DiretivasComponent },
     ],
   },
 

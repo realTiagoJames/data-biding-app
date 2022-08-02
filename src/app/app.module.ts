@@ -23,6 +23,7 @@ import { PropertyBidingComponent } from './property-biding/property-biding.compo
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DiretivasComponent } from './diretivas/diretivas.component';
 
 
 
@@ -36,7 +37,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     MainBarComponent,
     TwoWayBidingComponent,
-    PipesComponent
+    PipesComponent,
+    DiretivasComponent
   ],
   imports: [
     BrowserModule,
