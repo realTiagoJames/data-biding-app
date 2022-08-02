@@ -13,6 +13,12 @@ import { EventBidingComponent } from './event-biding/event-biding.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { EventBiding2Component } from './event-biding2/event-biding2.component';
+import { HomeComponent } from './home/home.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { MainBarComponent } from './main-bar/main-bar.component';
+
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -21,7 +27,9 @@ import { EventBiding2Component } from './event-biding2/event-biding2.component';
     StringInterpolationComponent,
     PropertyBidingComponent,
     EventBidingComponent,
-    EventBiding2Component
+    EventBiding2Component,
+    HomeComponent,
+    MainBarComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +39,10 @@ import { EventBiding2Component } from './event-biding2/event-biding2.component';
     MatButtonModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,28 +1,71 @@
 <p class="title">TESTANDO EVENT BINDING</p>
 
-<p class="espaço-padrao">Exemplo 1 - Ao clickar, aparece um alerta.</p>
 <section class="espaço-padrao">
+  <p>Exemplo 1 - Ao clickar, aparece um alerta.</p>
   <p>{{name}}</p>
-  <input type="botton" value="Save" (click)="clickSave()">
+  <button mat-raised-button color="primary" value="Save" (click)="clickSave()">Save</button>
 </section>
-
-<p class="espaço-padrao">Exemplo 2 - Ao clickar altera o nome e bolta pro original depois de segundos.</p>
+<hr>
 <section class="espaço-padrao">
+  <p>Exemplo 2 - Ao clickar altera o nome e volta pro original depois de segundos.</p>
   <p>{{name2}}</p>
-  <input type="botton" value="Save" (click)="clickSave2()">
+  <button mat-raised-button color="primary" value="Save" (click)="clickSave2()">Save</button>
 </section>
-
-<p class="espaço-padrao">Exemplo 3 - Ao passar o mouse por cima, altera a o texto.</p>
-<p class="espaço-padrao">Ao clickar, aparece um alerta.</p>
+<hr>
 <section class="espaço-padrao">
+  <p>Exemplo 3 - Ao passar o mouse por cima, altera a o texto.</p>
+  <p>Ao clickar, aparece um alerta.</p>
   <p>{{name3}}</p>
-  <input type="botton" value="Save" (click)="clickSave3()" (mouseover)="over()">
+  <button mat-raised-button color="primary" value="Save" (click)="clickSave3()" (mouseover)="over()">Save</button>
 </section>
-
-<p class="espaço-padrao">Exemplo 4 - Ao digitar o nome e clickar fora altera o texto.</p>
-<p class="espaço-padrao">Ao clickar, aparece um alerta.</p>
+<hr>
 <section class="espaço-padrao">
+  <p>Exemplo 4 - Ao digitar o nome e clickar fora altera o texto.</p>
+  <p>Ao clickar em Save, aparece um alerta.</p>
   <p>{{name4}}</p>
   <input type="botton" (change)="txtChange()">
-  <input type="botton" value="Save" (click)="clickSave4()">
+  <input class="input4" type="botton" value="Save" (click)="clickSave4()">
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 5 - Ao clickar no botão com um nome, aparece o texto com a contagem de ckicks.</p>
+  <p>Ao clickar em save, envia mensagem 'Click' e contagem para o console.log</p>
+  <button mat-stroked-button color="primary" (click)="save()">Save</button>
+  <button mat-stroked-button color="warn" (click)="inc()">{{name5}}</button>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 6 - Ao clickar em Like, aparece o texto com a contagem de ckicks ao lado.</p>
+  <p>Também envia mensagem 'Click' e contagem para o console.log</p>
+  <button mat-stroked-button color="primary" (click)="save()" (click)="inc2()">Like</button>
+  <button mat-button color="warn">{{like}}</button>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <article>
+    <p>Examplo 7 - Ao digitar no input, imprime o valor digitado e salva após enter <br>ou clickar em outro lugar na
+      página </p>
+    <input type="text" (keyup)="onKeyup($event)" (keyup.enter)="onSave(campo.value)" (blur)="onSave(campo.value)"
+      #campo>
+    <div>Conteúdo Atual: {{ conteudoAtual }}</div>
+    <div>Conteúdo Salvo: {{ conteudoSalvo }}</div>
+  </article>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 8 - Ao digitar o nome e clickar fora altera o texto.</p>
+  <p>Ao clickar em Save, aparece um alerta.</p>
+  <p>{{name6}}</p>
+  <input type="text" (change)="txtChange8()" (keyup)="onKeyup8($event)" (keyup.enter)="onSave8(campo2.value)"
+    (blur)="onSave8(campo2.value)" #campo2>
+  <input class="input4" type="botton" value="Save" (click)="clickSave8()">
+</section>
+<hr>
+<section class="espaço-padrao">
+  <article>
+    <p>Exemplo 9 - Bind com property-bind:</p>
+    <span class="ex9" (mouseover)="onMouseOver()" (mouseout)="onMouseOver()" [class.highlight]="isMouseOver">Mouse Over
+      here!
+    </span>
+  </article>
 </section>

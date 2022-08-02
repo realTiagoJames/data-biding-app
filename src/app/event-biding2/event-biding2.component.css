@@ -5,5 +5,26 @@
   margin: 20px;
   font-weight: bold;
   font-size: 20px;
+  color: #00489a;
 }
 
+.braili5nho{
+  color: white;
+  background-color: blueviolet;
+
+}
+.ex9{
+  color: rgb(242, 1, 125);
+}
+.highlight{
+  color: blue;
+  background-color: aqua;
+  font-weight: bolder;
+  font-size: larger;
+}
+.input4{
+  background-color: #00489a;
+  width: 40px;
+  color: white;
+  text-align: center;
+}
