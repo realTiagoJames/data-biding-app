@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-way-biding.component.css']
 })
 export class TwoWayBidingComponent implements OnInit {
+  name:  string = '';
+  name2: string = '';
+
 
   constructor() { }
 

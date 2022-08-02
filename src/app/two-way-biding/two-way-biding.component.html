@@ -1,1 +1,26 @@
-<p>two-way-biding works!</p>
+<h1 class="title">Two-Way-Data-Biding</h1>
+
+<div class="espaço-padrao">
+  <p>Exemplo 1 - Ao digitar o nome no input, o nome será refletido em baixo.<br>
+    Aparece sugestão de nome, se o nome for apagado e o cursor estiver no input.</p>
+  <form>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Digite o seu nome" />
+    <input type="submit" value="Enviar">
+  </form>
+  <p> O nome é: {{name}}</p>
+</div>
+<hr>
+
+<div class="espaço-padrao">
+  <p>Exemplo 2 - Ao digitar o nome no input, a string e o nome serão refletidos em baixo<br>
+     obedecendo a condicional (aparecer apenas se for digitado o nome)</p>
+  <form>
+    <input type="text" [(ngModel)]="name2" name="name" placeholder="Digite o seu nome" />
+    <input type="submit" value="Enviar">
+  </form>
+
+  <!-- Essa condicional faz refletir a string e o nome apenas se for digitado o nome no input -->
+  <div *ngIf="name2 !== '' ">
+    <p> O nome é: {{name2}}</p>
+  </div>
+</div>
