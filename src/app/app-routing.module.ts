@@ -1,3 +1,4 @@
+import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
 import { MainBarComponent } from './main-bar/main-bar.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'event-bind2', component: EventBiding2Component },
       { path: 'string-interpolation', component: StringInterpolationComponent },
       { path: 'property-bind', component: PropertyBidingComponent },
+      { path: 'two-way-data-binding', component: TwoWayBidingComponent },
     ],
   },
 

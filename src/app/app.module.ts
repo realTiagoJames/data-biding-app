@@ -19,6 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MainBarComponent } from './main-bar/main-bar.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     EventBidingComponent,
     EventBiding2Component,
     HomeComponent,
-    MainBarComponent
+    MainBarComponent,
+    TwoWayBidingComponent
   ],
   imports: [
     BrowserModule,
