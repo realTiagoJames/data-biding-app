@@ -1,5 +1,6 @@
 .img-angular{
   height: 50px;
+  cursor: pointer;
 }
 .toolbar{
   background-color: #3f51b5;
@@ -12,3 +13,18 @@
  .menu-button:hover{
   background-color: rgba(0,0,0,.4);
  }
+
+ .alert{
+  color: #ffffff;
+  background-color: #080808;
+  border-color: #080808;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  margin-bottom: -12px;
+  text-align: center;
+}
+.alert-link{
+  margin-left: 5px;
+  color: blueviolet;
+
+}
