@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./string-interpolation.component.css']
 })
 export class StringInterpolationComponent implements OnInit {
+  cursoAngular: boolean = true;
+
+  url: string = 'http://foxnews.com';
 
   firstname ="Jhon";
   age = 100;
@@ -15,6 +18,15 @@ export class StringInterpolationComponent implements OnInit {
     age: 50,
     address: "Route 100"
   }
+
+  getValor(){
+    return 1;
+  }
+
+  getCurtirCurso(){
+    return true;
+  }
+
 
   constructor() { }
 

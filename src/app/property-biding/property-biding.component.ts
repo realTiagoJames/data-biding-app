@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class PropertyBidingComponent implements OnInit {
 
   color: string = "accent";
+
+  urlImagem = 'https://picsum.photos/200/300';
   btnDisabled = false;
   colors = ['primary', 'accent', 'warn', '']
   idx = 0;
+
 
   constructor() { }
 
