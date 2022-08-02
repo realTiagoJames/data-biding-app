@@ -2,9 +2,19 @@
 <section class="espaço-padrao">
   <p>Exemplo 1 - uma tag de imagem:</p>
   <article>
-    <img [src]="urlImagem" alt="random picture">
+    <img [src]="urlImagem">
 
   </article>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 2 - Diferença entre Property Biding e Interpolation</p>
+  <input type="text" [disabled]="disableBox" [value]=nameCliente >
+  <br><br>
+  <input type="text" disabled="{{disableBox2}}" value={{nameCliente}} >
+  <br><br>
+  <button (click)="enableBox()">Enable TextBox</button>
+  <button (click)="enableBox2()">Enable TextBox2</button>
 </section>
 <hr>
 <section class="espaço-padrao">

@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBidingComponent implements OnInit {
 
+  nameCliente:  string = 'Tyler';
   color: string = "accent";
 
   urlImagem = 'https://picsum.photos/200/300';
   btnDisabled = false;
   colors = ['primary', 'accent', 'warn', '']
   idx = 0;
+  disableBox=true;
+  disableBox2=true;
 
+  enableBox(){
+    this.disableBox=false
+  }
+
+  enableBox2(){
+    this.disableBox2=false
+  }
 
   constructor() { }
 
