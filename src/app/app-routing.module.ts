@@ -1,3 +1,4 @@
+import { PipesComponent } from './pipes/pipes.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
 import { MainBarComponent } from './main-bar/main-bar.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'string-interpolation', component: StringInterpolationComponent },
       { path: 'property-bind', component: PropertyBidingComponent },
       { path: 'two-way-data-binding', component: TwoWayBidingComponent },
+      { path: 'pipes', component: PipesComponent },
     ],
   },
 

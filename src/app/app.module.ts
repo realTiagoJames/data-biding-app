@@ -20,6 +20,7 @@ import { NgModule } from '@angular/core';
 import { PropertyBidingComponent } from './property-biding/property-biding.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component
     EventBiding2Component,
     HomeComponent,
     MainBarComponent,
-    TwoWayBidingComponent
+    TwoWayBidingComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
