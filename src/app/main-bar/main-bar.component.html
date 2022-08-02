@@ -1,13 +1,17 @@
 <p>
-  <mat-toolbar class="toolbar" >
+  <mat-toolbar class="toolbar">
     <img class="img-angular" src="assets\angular.png">
-    <a button mat-raised-button class="buttons" routerLink="/">Home</a>
-    <a button mat-raised-button class="buttons" routerLink="event-bind">Bind</a>
-    <a button mat-raised-button class="buttons" routerLink="event-bind2">Bind2</a>
-    <a button mat-raised-button class="buttons" routerLink="string-interpolation">String-Interpolation</a>
-    <a button mat-raised-button class="buttons" routerLink="property-bind">Property-Bind</a>
-    <a button mat-raised-button class="buttons" routerLink="two-way-data-binding">Two-Way-Data-Binding</a>
-    <a button mat-raised-button class="buttons" routerLink="pipes">Pipes</a>
+    <button mat-button [matMenuTriggerFor]="belowMenu" class="menu-button">Templates</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="event-bind">Bind</button>
+      <button mat-menu-item class="buttons" routerLink="event-bind2">Bind2</button>
+      <button mat-menu-item class="buttons" routerLink="/">Home</button>
+      <button mat-menu-item class="buttons" routerLink="string-interpolation">String-Interpolation</button>
+      <button mat-menu-item class="buttons" routerLink="property-bind">Property-Bind</button>
+      <button mat-menu-item class="buttons" routerLink="two-way-data-binding">Two-Way Binding</button>
+      <button mat-menu-item class="buttons" routerLink="pipes">Pipes</button>
+    </mat-menu>
+
   </mat-toolbar>
   <router-outlet></router-outlet>
 </p>

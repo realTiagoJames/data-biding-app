@@ -13,14 +13,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
+import { PipesComponent } from './pipes/pipes.component';
 import { PropertyBidingComponent } from './property-biding/property-biding.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
-import { PipesComponent } from './pipes/pipes.component';
+
 
 
 @NgModule({
@@ -47,7 +49,8 @@ import { PipesComponent } from './pipes/pipes.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
