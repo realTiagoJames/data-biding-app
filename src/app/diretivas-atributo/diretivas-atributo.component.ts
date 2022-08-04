@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-diretivas',
-  templateUrl: './diretivas.component.html',
-  styleUrls: ['./diretivas.component.css']
+  selector: 'app-diretivas-atributo',
+  templateUrl: './diretivas-atributo.component.html',
+  styleUrls: ['./diretivas-atributo.component.css']
 })
-export class DiretivasComponent implements OnInit {
+export class DiretivasAtributoComponent implements OnInit {
 
   // ____________________ exemplo 2:
   size = 25;
