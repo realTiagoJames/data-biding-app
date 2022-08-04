@@ -1,5 +1,28 @@
 <h1 class="title">Diretivas</h1>
-<section>
+<section class="espaço-padrao">
   <p>Exemplo 1 - Testando diretivas de estilo / styles</p>
-  <p>Texto qualquer para exemplo de estilo com diretivas</p>
+  <p [ngStyle]="{ 'font-size': '15px'}">
+    Texto qualquer para exemplo de estilo com diretivas</p>
 </section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 2 - Aplicando diretivas por meio de propriedades</p>
+  <p [ngStyle]="{ 'font-size': size + 'px', 'font-family': font, color: color}">
+    Texto qualquer para exemplo de estilo com diretivas</p>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 3 - Aplicando diretivas de classe 1</p>
+  <h1 [ngClass]="classes">
+    Texto qualquer para exemplo de estilo com diretivas</h1>
+  <h1 [ngClass]="classes">
+    Texto qualquer para exemplo de estilo com diretivas</h1>
+</section>
+<hr>
+<section class="espaço-padrao">
+  <p>Exemplo 4 - Aplicando diretivas de classe de forma única</p>
+
+  <h1 [ngClass]="underline">
+    Texto qualquer para exemplo de estilo com diretivas</h1>
+</section>
+<hr>

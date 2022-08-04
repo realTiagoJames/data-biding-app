@@ -4,3 +4,21 @@
   font-size: 20px;
   color: #00489a;
 }
+
+
+
+/* ________exemplo 3: */
+.small-title {
+  font-size: 12px;
+
+}
+
+.green-title {
+  color: darkgreen;
+
+}
+
+
+.underlined-title {
+  text-decoration: underline;
+}
