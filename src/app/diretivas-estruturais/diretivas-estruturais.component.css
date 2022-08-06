@@ -1,0 +1,28 @@
+.title{
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #00489a;
+}
+
+
+.mat-card-subtitle, .mat-card-content {
+  font-size: 15px;
+}
+
+mat-card{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.info-card{
+  cursor: pointer;
+  height: 130px;
+ }
+
+ .info-card:hover{
+
+     background-color: rgba(134, 134, 134, 0.4);
+     color: white;
+
+    }
