@@ -1,1 +1,32 @@
 <p>diretivas-estruturais works!</p>
+
+<div class="itens" >
+  <h1>Relatórios</h1>
+  <div
+    fxLayout="row wrap"
+    fxLayout.lt-md="column"
+    fxLayoutAlign="start center"
+    fxLayoutGap="16px"
+  >
+    <div *ngFor="let item of items"
+    fxFlex.mt-lg="30"
+    fxFlex.lt-lg="48"
+    fxFlex="30"
+    class="item">
+      <mat-card class="info-card" [routerLink]="item.url">
+        <mat-card-title>
+          <button mat-mini-fab disabled>
+            <mat-icon>{{ item.icon }}</mat-icon>
+          </button>
+          {{ item.title }}
+        </mat-card-title>
+        <mat-card-content>
+          <p>
+            {{ item.desc }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+

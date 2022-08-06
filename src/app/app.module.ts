@@ -28,6 +28,7 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,9 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
     MatSidenavModule,
     FormsModule,
     MatMenuModule,
-    NgbModule
+    NgbModule,
+
+
 
   ],
   providers: [],
