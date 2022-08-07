@@ -1,3 +1,8 @@
+import { Crud02Component } from './crud02/crud02.component';
+import { CreateUserComponent } from './users/create-user/create-user.component';
+import { UsersComponent } from './users/users.component';
+import { CrudComponent } from './crud/crud.component';
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributoComponent } from './diretivas-atributo/diretivas-atributo.component';
 import { PipesComponent } from './pipes/pipes.component';
@@ -25,6 +30,12 @@ const routes: Routes = [
       { path: 'pipes', component: PipesComponent },
       { path: 'diretivas-de-atributo', component: DiretivasAtributoComponent },
       { path: 'diretivas-estruturais', component: DiretivasEstruturaisComponent },
+      { path: 'dependency-injection', component: DependencyInjectionComponent },
+      { path: 'crud', component: CrudComponent },
+      { path: 'crud02', component: Crud02Component },
+      { path: 'users', component: UsersComponent },
+      { path: 'users/create', component: CreateUserComponent },
+
     ],
   },
 

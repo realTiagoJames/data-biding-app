@@ -19,6 +19,16 @@
       <button mat-menu-item class="buttons" routerLink="diretivas-de-atributo">Diretivas de Atributo</button>
       <button mat-menu-item class="buttons" routerLink="diretivas-estruturais">Diretivas Estruturais</button>
     </mat-menu>
+    <button mat-button [matMenuTriggerFor]="belowMenu3" class="menu-button">Dependency Injection</button>
+    <mat-menu #belowMenu3="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="dependency-injection">Exemplo 1</button>
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="belowMenu4" class="menu-button">CRUD</button>
+    <mat-menu #belowMenu4="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="crud">Exemplo 1</button>
+      <button mat-menu-item class="buttons" routerLink="crud02">Exemplo 2</button>
+    </mat-menu>
 
   </mat-toolbar>
   <router-outlet></router-outlet>
