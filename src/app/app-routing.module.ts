@@ -1,3 +1,4 @@
+import { AutoCompleteComponent } from './angular-material/auto-complete/auto-complete.component';
 import { Crud02Component } from './crud02/crud02.component';
 import { CreateUserComponent } from './users/create-user/create-user.component';
 import { UsersComponent } from './users/users.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
       { path: 'crud02', component: Crud02Component },
       { path: 'users', component: UsersComponent },
       { path: 'users/create', component: CreateUserComponent },
+      { path: 'auto-complete', component: AutoCompleteComponent },
 
     ],
   },

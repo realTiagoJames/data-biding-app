@@ -19,6 +19,9 @@ const ALERTS: Alert[] = [{
 })
 export class MainBarComponent implements OnInit {
 
+  isActive = false;
+
+
   alerts!: Alert[];
 
   constructor() {

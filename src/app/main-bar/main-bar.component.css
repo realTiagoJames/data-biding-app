@@ -4,6 +4,7 @@
 }
 .toolbar{
   background-color: #3f51b5;
+
 }
 
 .menu-button{
@@ -23,8 +24,13 @@
   margin-bottom: -12px;
   text-align: center;
 }
-.alert-link{
+/* .alert-link{
   margin-left: 5px;
   color: rgb(148, 228, 255);
 
+}
+ */
+
+ .custom .my-btn {
+  background-color: blue
 }

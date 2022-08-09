@@ -1,9 +1,9 @@
-<p *ngFor="let alert of alerts">
+<p *ngFor="let alert of alerts" class="custom">
   <ngb-alert class="alert" (closed)="close(alert)">{{ alert.message }}<a href="http://www.foxnews.com" class="alert-link" target="_blank">www.foxnews.com</a></ngb-alert>
 </p>
 
-<p>
-  <mat-toolbar class="toolbar">
+<div>
+  <mat-toolbar class="toolbar" class="mat-elevation-z8 bg-primary">
     <img class="img-angular" src="assets\angular.png" routerLink="/">
     <button mat-button [matMenuTriggerFor]="belowMenu" class="menu-button">Templates</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
@@ -29,8 +29,13 @@
       <button mat-menu-item class="buttons" routerLink="crud">Exemplo 1</button>
       <button mat-menu-item class="buttons" routerLink="crud02">Exemplo 2</button>
     </mat-menu>
+    <button mat-button [matMenuTriggerFor]="belowMenu5" class="menu-button">Angular Material</button>
+    <mat-menu #belowMenu5="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="auto-complete">AutoComplete</button>
+      <button mat-menu-item class="buttons" routerLink="auto-complete">Exemplo 2</button>
+    </mat-menu>
 
   </mat-toolbar>
   <router-outlet></router-outlet>
-</p>
+</div>
 

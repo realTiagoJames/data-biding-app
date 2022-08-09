@@ -1,13 +1,21 @@
-import { CursosModule } from './cursos/cursos.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { Crud02Component } from './crud02/crud02.component';
+import { CrudComponent } from './crud/crud.component';
+import { CursosModule } from './cursos/cursos.module';
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
+import { DiretivasAtributoComponent } from './diretivas-atributo/diretivas-atributo.component';
+import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { EventBiding2Component } from './event-biding2/event-biding2.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 import { MainBarComponent } from './main-bar/main-bar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -18,21 +26,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { PipesComponent } from './pipes/pipes.component';
 import { PropertyBidingComponent } from './property-biding/property-biding.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DiretivasAtributoComponent } from './diretivas-atributo/diretivas-atributo.component';
-import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
-import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
-import { CrudComponent } from './crud/crud.component';
 import { UsersComponent } from './users/users.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
-import { Crud02Component } from './crud02/crud02.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ElementDialogComponent } from './shared/element-dialog/element-dialog.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AutoCompleteComponent } from './angular-material/auto-complete/auto-complete.component';
+
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 
@@ -55,9 +61,12 @@ import { Crud02Component } from './crud02/crud02.component';
     CrudComponent,
     UsersComponent,
     Crud02Component,
+    ElementDialogComponent,
+    AutoCompleteComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule, //colocar sempre após o BrowserModule
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
@@ -72,9 +81,13 @@ import { Crud02Component } from './crud02/crud02.component';
     NgbModule,
     FlexLayoutModule,
     CursosModule,
-    HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatAutocompleteModule
 
 
 
