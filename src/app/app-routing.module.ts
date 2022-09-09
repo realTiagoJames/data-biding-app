@@ -1,3 +1,7 @@
+import { ButtonComponent } from './angular-material/button/button.component';
+import { Formulario1Component } from './formularios/formulario1/formulario1.component';
+import { FlexlayoutComponent } from './flexlayout/flexlayout.component';
+import { DesignComponent } from './design/design.component';
 import { AutoCompleteComponent } from './angular-material/auto-complete/auto-complete.component';
 import { Crud02Component } from './crud02/crud02.component';
 import { CreateUserComponent } from './users/create-user/create-user.component';
@@ -37,6 +41,10 @@ const routes: Routes = [
       { path: 'users', component: UsersComponent },
       { path: 'users/create', component: CreateUserComponent },
       { path: 'auto-complete', component: AutoCompleteComponent },
+      { path: 'design', component: DesignComponent },
+      { path: 'flexlayout', component: FlexlayoutComponent },
+      { path: 'formulario1', component: Formulario1Component },
+      { path: 'button', component: ButtonComponent },
 
     ],
   },

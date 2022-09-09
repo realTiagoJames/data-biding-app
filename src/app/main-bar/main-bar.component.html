@@ -5,6 +5,7 @@
 <div>
   <mat-toolbar class="toolbar" class="mat-elevation-z8 bg-primary">
     <img class="img-angular" src="assets\angular.png" routerLink="/">
+
     <button mat-button [matMenuTriggerFor]="belowMenu" class="menu-button">Templates</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
       <button mat-menu-item class="buttons" routerLink="event-bind">Bind</button>
@@ -14,25 +15,41 @@
       <button mat-menu-item class="buttons" routerLink="two-way-data-binding">Two-Way Binding</button>
       <button mat-menu-item class="buttons" routerLink="pipes">Pipes</button>
     </mat-menu>
+
     <button mat-button [matMenuTriggerFor]="belowMenu2" class="menu-button">Diretivas</button>
     <mat-menu #belowMenu2="matMenu" yPosition="below">
       <button mat-menu-item class="buttons" routerLink="diretivas-de-atributo">Diretivas de Atributo</button>
       <button mat-menu-item class="buttons" routerLink="diretivas-estruturais">Diretivas Estruturais</button>
     </mat-menu>
+
     <button mat-button [matMenuTriggerFor]="belowMenu3" class="menu-button">Dependency Injection</button>
     <mat-menu #belowMenu3="matMenu" yPosition="below">
       <button mat-menu-item class="buttons" routerLink="dependency-injection">Exemplo 1</button>
 
     </mat-menu>
+
     <button mat-button [matMenuTriggerFor]="belowMenu4" class="menu-button">CRUD</button>
     <mat-menu #belowMenu4="matMenu" yPosition="below">
       <button mat-menu-item class="buttons" routerLink="crud">Exemplo 1</button>
       <button mat-menu-item class="buttons" routerLink="crud02">Exemplo 2</button>
     </mat-menu>
+
     <button mat-button [matMenuTriggerFor]="belowMenu5" class="menu-button">Angular Material</button>
     <mat-menu #belowMenu5="matMenu" yPosition="below">
       <button mat-menu-item class="buttons" routerLink="auto-complete">AutoComplete</button>
-      <button mat-menu-item class="buttons" routerLink="auto-complete">Exemplo 2</button>
+      <button mat-menu-item class="buttons" routerLink="button">Button</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="belowMenu6" class="menu-button">Design</button>
+    <mat-menu #belowMenu6="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="flexlayout">Flexlayout</button>
+      <button mat-menu-item class="buttons" routerLink="diretivas-estruturais">CSS</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="belowMenu7" class="menu-button">Formulário</button>
+    <mat-menu #belowMenu7="matMenu" yPosition="below">
+      <button mat-menu-item class="buttons" routerLink="formulario1">Formulário1</button>
+      <button mat-menu-item class="buttons" routerLink="formulario1">Formulario2</button>
     </mat-menu>
 
   </mat-toolbar>

@@ -1,0 +1,55 @@
+.titulo1{
+  margin-top: 20px;
+  font: bolder;
+  color: blue;
+  font-size: 30px;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row{
+  margin-left: 8px;
+
+}
+
+.abc20{
+  margin-left: 10px;
+  background-color: brown;
+  color: white;
+}
+
+.abc21{
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.abc22{
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+}
+
+
+.abc23{
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+}
+
+.abc24{
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+}
+
+.abc25{
+  margin-left: 10px;
+  background-color: purple;
+  color: white;
+}

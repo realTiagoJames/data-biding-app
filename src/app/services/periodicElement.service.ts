@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PeriodicElementService {
-    elementApiUrl = 'https://localhost:44366/swagger/index.html';
+    elementApiUrl = 'https://localhost:44366/api/PeriodicElements';
   constructor(private http: HttpClient) { }
 
   getElements(): Observable<PeriodicElement[]>{

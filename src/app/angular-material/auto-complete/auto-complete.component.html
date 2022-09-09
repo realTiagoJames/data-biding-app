@@ -1,4 +1,52 @@
 <div class="espaço-padrao">
 <h1 class="title">Autocomplete</h1>
+<p>Exemplo 1- Ao iniciar clickar no AutoComplete, aparecem opções abaixo que preenchem
+  <br> o input-value quando clickado em uma delas. </p>
+<mat-form-field>
+  <input type="text" matInput [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of options" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
+
+</mat-form-field>
+<hr>
+
+<!-- <p>Exemplo 2- Ao iniciar clickar no AutoComplete, aparecem opções abaixo que preenchem
+  <br> o input-value quando clickado em uma delas. </p>
+<mat-form-field>
+  <input type="text" matInput [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+    <mat-option *ngFor="let option of ObjectOptions" [value]="option">
+      {{option.name}}
+    </mat-option>
+  </mat-autocomplete>
+
+</mat-form-field> -->
 
 </div>
+<hr>
+
+<!-- <div class="container">
+  <select [(ngModel)]="keyword">
+    <option *ngFor="let item of keywords" [value]="item">{{ item }}</option>
+  </select>
+  <h2>AutoComplete</h2>
+  <ng-autocomplete
+    [data]="data$ | async"
+    [searchKeyword]="keyword"
+    [itemTemplate]="itemTemplate"
+    [notFoundTemplate]="notFoundTemplate"
+    placeholder="Enter the name"
+  >
+  </ng-autocomplete>
+
+  <ng-template #itemTemplate let-item>
+    <a [innerHTML]="item.name"></a>
+  </ng-template>
+
+  <ng-template #notFoundTemplate let-notFound>
+    <div [innerHTML]="notFound"></div>
+  </ng-template>
+</div> -->
